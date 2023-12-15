@@ -196,3 +196,95 @@ h1{
     margin: 0;
     margin-top: 20px;
 }
+
+/* ---------------------------------------------------------------cards */
+
+.green{
+    grid-column: 1/-1;
+    color: white;
+    margin-top: 30px;
+    padding-top: 50px;
+    background-color:#465A4F ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+}
+
+
+.green h4{
+    text-transform: uppercase;
+    font-family: 'wilky', sans-serif;
+    font-size: 3rem;
+    width: 17ch;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+   
+}
+
+.green > p{
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 60ch;
+}
+.cards{
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+
+
+.green img{
+    height: 350px;
+   
+}
+
+.card{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;  
+   
+}
+
+.card h6{
+    font-family: 'wilky', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.card p{
+    font-size: 11px;
+   line-height: 1.5;
+   width: 30ch;
+   margin: 15px 0;
+  
+}
+
+.card a:visited,a{
+    color: #E3FD1F;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+.card img{
+    border-radius: 4px;
+    margin-top: 0;
+    height: 300px;
+}
+
+.card-foot{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+}
