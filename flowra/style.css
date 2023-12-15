@@ -16,12 +16,20 @@
 }
 
 body{
-    margin: 40px 50px;
+    margin: 40px 0px;
     font-family: 'gilroy', sans-serif;
     background-color: #E0D8CC;
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+
+}
+
+body > *{
+    grid-column: 2;
 }
 
 
+/* ---------------------------------------------nav */
 nav{
     display: flex;
     justify-content: space-between;
@@ -46,7 +54,7 @@ nav{
     text-transform: capitalize;
 }
 
-nav button{
+button{
     width: 120px;
     height: 40px;
     border-radius: 50px;
@@ -57,7 +65,7 @@ nav button{
   
 }
 
-nav button:hover{
+button:hover{
     background-color: #E3FD1F;
     color: black;
 }
@@ -65,4 +73,126 @@ nav button:hover{
 hr{
     margin-top: 30px;
     border: 1px solid black;
+}
+
+nav .logo{
+    height: auto;
+    border: none;
+    font-size: 1.5rem ;
+
+}
+/* ----------------------------------------hero */
+
+.wrapper{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroimg{
+    width: 100%;
+}
+.wrapper .heroimg img{
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+h1{
+    font-family: 'wilky', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    width: 13ch;
+    color: white;
+    line-height: 1;
+    text-transform: uppercase;
+    position: absolute;
+    top:50px;
+    left: 50px;
+}
+
+.wrapper button{
+    margin: 30px;
+    width: 160px;
+    height: 45px;
+}
+
+.hero-foot{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: 100px;
+    align-items: center;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    border-left: rgb(109, 109, 109) 2px solid;
+    border-right: rgb(82, 82, 82) 2px solid;
+    margin: 10px;
+    height: 100px;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+
+/* -------------------------------------------------------------sub-hero */
+
+.subwrap{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.wrapper h4{
+    margin-bottom: 50px;
+    text-align: center;
+    
+    text-transform: uppercase;
+}
+
+.subwrap img{
+    height: 400px;
+    overflow: hidden;
+    width: 40%;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 30px;
+   
+}
+
+
+
+.txt{
+    width: 50%;
+   padding-left: 60px;
+    border-left: 2px solid rgb(43, 42, 42);
+}
+
+.txt p{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: rgb(34, 34, 34);
+}
+
+.txt h2{
+    font-family: 'wilky' , sans-serif;
+    font-size: 3.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.txt button{
+    margin: 0;
+    margin-top: 20px;
 }
