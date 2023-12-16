@@ -327,3 +327,40 @@ h1{
 .wrap2 p{
     width: 30ch;
 }
+
+
+/* ---------------------------------------------------foooter-hero */
+
+ 
+
+.foot{
+   grid-column: 1/-1;
+    margin-top: 50px;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.507)), url("https://images.unsplash.com/photo-1584696993692-a53190f76609?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 600px;
+    background-position: 0 -300px;
+    background-size: cover;
+    
+}
+
+.foot .txt{
+    color: white;
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    border: none;
+}
+
+.foot .txt p{
+    color: white;
+    width: 30ch;
+    font-size: 14px;
+
+}
+
+.foot .txt button{
+    background-color: #E3FD1F;
+    color: black;
+    width: 150px;
+}
