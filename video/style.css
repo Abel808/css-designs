@@ -102,17 +102,15 @@
   position: relative;
   border: none;
   border-radius: 30px;
-  margin-bottom: 50px;
 }
 
 .bt::before, .bt::after{
-  content: 'now';
+  content: 'Okay';
   position: absolute;
   top: 0;
   left: 0;
- 
-  background-color: rgb(217, 255, 0);
-  color: black;
+  background-color: blue;
+  
   border-radius: 30px;
   width: 100%;
   height: 100%;
@@ -123,12 +121,15 @@
   transform-origin: top;
 }
 
-.bt::after{
-  content: 'Great';
-   background-color: blue;
-  transition-delay:0.2s ; 
-  color: white;
 
+.bt::before{
+   transition-delay:0.2s ; 
+}
+
+.bt::after{
+  content: 'now';
+  background-color: rgb(217, 255, 0);
+  color: black;
  
 }
 
@@ -136,4 +137,92 @@
   transform: rotateX(270deg);
 }
 
-/* ------------------------------------------------------bt 2 */
+.bt:hover::after{
+  /* transition-delay: 0s; */
+}
+
+/* ---------------------------------------------------------------btn flip */
+
+.bt2{
+  margin: 100px;
+  padding: 20px 100px ;
+  border: none;
+  border-radius: 40px;
+  background-color: beige;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.bt2::before,.bt2::after{
+  content: 'Dign in';
+ width: 100%;
+ height: 100%;
+  position: absolute;
+  top:0px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: bottom;
+  transition: transform 0.6s;
+}
+
+.bt2::after{
+  top:-20px;
+  transition-delay:0.5s ;
+  transform-origin: bottom;
+}
+
+.bt2:hover::before {
+  transform: rotateX(270deg);
+}
+
+.bt2:hover::after{
+   transform: rotateX(270deg); 
+   
+  
+} 
+/* -------------------------------------------- 3d flip */
+
+.container{
+  perspective: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  
+}
+
+.box{
+  position: relative;
+
+  height:150px;
+  width: 350px;
+  transform-style: preserve-3d;
+  transition: 0.4s ease;
+}
+.box:hover{
+  transform: rotateX(90deg);
+}
+.btn{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+
+.upside{
+  /* background: radial-gradient(circle, pink, purple,rgb(108, 74, 187)); */
+  background-color: black;
+  transform: rotateX(-90deg) translateZ(75px);
+}
+
+.front{
+  transform: translateZ(75px);
+}
