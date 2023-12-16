@@ -89,10 +89,15 @@ nav .logo{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+
+    
+
 }
 
 .heroimg{
     width: 100%;
+   
 }
 .wrapper .heroimg img{
     overflow: hidden;
@@ -100,6 +105,10 @@ nav .logo{
     height: 50vh;
     object-fit: cover;
     object-position: center;
+    border-radius: 20px;
+    clip-path: polygon(51% 2%, 100% 1%, 98% 54%, 100% 100%, 52% 99%, 0 100%, 1% 52%, 0 0);
+  
+
     
 }
 
@@ -341,6 +350,8 @@ h1{
     height: 600px;
     background-position: 0 -300px;
     background-size: cover;
+    clip-path: polygon(53% 8%, 78% 6%, 100% 0, 99% 100%, 75% 95%, 52% 94%, 28% 95%, 0 100%, 0 0, 29% 6%);
+ 
     
 }
 
@@ -363,4 +374,40 @@ h1{
     background-color: #E3FD1F;
     color: black;
     width: 150px;
+}
+
+/* -----------------------------------------------footer */
+.footer{
+    margin-top: 30px;
+    text-transform: capitalize;
+    
+}
+
+.footer .right{
+    display: flex;
+    gap: 30px;
+}
+.footer .left{
+    gap: 30px;
+}
+
+small{
+    text-align: center;
+    font-size: 10px;
+    color: #465A4F;
+    margin-top: 20px;
+}
+
+
+/* --------------------------------media queries */
+
+@media  (min-width: 1300px) {
+    
+    body{
+       grid-template-columns: 2fr 5fr 2fr;
+    }
+
+    .card-foot > *{
+        grid-column: 2;
+    }
 }
