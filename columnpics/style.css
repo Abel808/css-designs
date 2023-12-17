@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .container{
+    position: relative;
+    margin-top: 10vh;
+    height: 80vh;
+    background-color: rgb(31, 31, 39);
+    overflow: hidden;
+    display: flex; 
+    justify-content: center;
+   
+ }
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+   
+    
+}
+
+.a,.b,.c,.d{
+    position: absolute;
+}
+
+.a{
+    top:0;
+    left: 0;
+    transform: translateY(0);
+}
+
+.b{
+    top:0;
+    left: 290px;
+}
+.c{
+    top:0;
+    left: calc(290px + 290px);
+}
+.d{
+    top:0;
+    left: calc(290px + 290px + 290px);
+}
+
+
+
+ img{
+    height: 480px;
+    width: 280px;
+ }
+
