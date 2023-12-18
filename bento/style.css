@@ -6,13 +6,15 @@
 
 html{
     font-family: 'Poppins', sans-serif;
+    background-color: #ffe8d8;
 }
 
 
 nav{
-    padding:30px 200px ;
+    padding:40px 200px ;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(238, 207, 181, 0.411);
     
 }
 
@@ -33,7 +35,7 @@ a:nth-of-type(1){
 /* ---------------------------------hero */
 
 .hero{
-    padding: 30px 200px;
+    padding: 0 200px;
    
 }
 
@@ -91,4 +93,84 @@ img{
 
 .beh{
     background-color: #b0e2ff;
+}
+
+@media (max-width:768px) {
+    nav{
+       padding:40px 100px ;
+       
+    }
+
+    .hero{
+        padding: 0 50px;
+    }
+    .hero img{
+        width: 60%;
+    }
+    .card{
+        width: 230px;
+    }
+    .main-hero{
+        padding: 0 40px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-hero h1{
+        margin: 0;
+    }
+    .main-hero p{
+        width: 45ch;
+        margin-bottom: 30px;
+    }
+    .subhero{
+
+    }
+    .b{
+        padding-right: 0px;
+    }
+}
+
+@media (max-width:320px) {
+    nav{
+        width: 320px;
+        padding: 20px 60px;
+    }
+
+   .b{
+    padding: 0;
+   }
+
+   .hero{
+    padding: 0 20px;
+    width: 440px;
+
+}
+.hero img{
+    width: 320px;
+    height:50%;
+}
+.card{
+    width: 300px;
+    gap: 30px;
+    height:50%;
+}
+.main-hero{
+    padding: 0 40px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-hero h1{
+    margin: 0;
+    font-size: 3rem;
+}
+.main-hero p{
+    width: 32ch;
+    margin-bottom: 30px;
+}
+.subhero{
+ flex-direction: column;
+}
+.b{
+    padding-right: 0px;
+}
 }
