@@ -74,14 +74,15 @@ main{
    
 }
 .content h1{
-   font-size: 9rem;
+   font-size: 5rem;
    font-weight: 400;
+   margin-bottom: 20px;
 }
 
 .content p {
     font-family: sans-serif;
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     letter-spacing: 1.2px;
     text-transform: capitalize;
     color: rgb(216, 216, 216);
@@ -108,31 +109,38 @@ main{
       animation: background-color movein 4s ease;
 } */
 
-.color-transition {
-    position: relative;
-     overflow: hidden; 
-    cursor: pointer;
-    color: #F55222;
-  }
-  
-  .color-transition::before {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    content: 'Work with us';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    transition: left 0.3s ease; /* Transition the 'left' property */
-    color: #F55222;
+.ham,.mobile{
+    display: none;
+}
 
-  }
+
+
+.ham div{
+   
+    height: 7px;
+    width: 20px;
+    border-bottom: 1px solid gray;
+}
+
+@media (max-width:700px) {
+   .mobile{
+    display: flex;
+    justify-content: space-between;
+   
+   } 
+   header{
+    display: none;
+   }
+   .ham{
+    display: block;
+   }
+
+   .content p{
+    font-size: 0.8rem;
+   }
+
+   .content h1{
   
-  .color-transition:hover::before {
-    left: 0; /* Move the background color from left to right */
-    color: #F55222;
-  }
-  
+    font-size: 3rem;
+   }
+}
