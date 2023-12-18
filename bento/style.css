@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav{
+    padding:30px 200px ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+a:nth-of-type(1){
+    border-bottom: 1px solid gray;
+}
+.b{
+    padding-right: 100px;
+}
+/* ---------------------------------hero */
+
+.hero{
+    padding: 30px 200px;
+   
+}
+
+.main-hero{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+
+.main-hero h1{
+    font-size: 9rem;
+    font-weight: 600;
+    margin-right: 150px;
+}
+
+.main-hero p{
+    width: 30ch;
+}
+
+img{
+    border-radius: 40px;
+    width: 1800px;
+    height: 550px;
+    object-fit: cover;
+}
+
+/* --------------------------------cards */
+
+.subhero{
+    display: flex;
+    gap: 30px;
+}
+
+.cards{
+    
+    width: 500px;
+}
+
+.card{
+    width: 400px;
+    border-radius: 30px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.eh{
+    background-color: #f5b697;
+    margin-bottom: 30px;
+}
+
+.beh{
+    background-color: #b0e2ff;
+}
