@@ -1,0 +1,182 @@
+
+/* ---------------------------------hero */
+
+.hero{
+    padding: 0 50px;
+    
+   
+  
+}
+
+.main-hero{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+
+.main-hero h1{
+    font-size: 9rem;
+    font-weight: 600;
+    margin-right: 150px;
+}
+
+/* .main-hero p{
+    width: 30ch;
+} */
+
+img{
+    
+    border-radius: 40px;
+    width: 60%;
+    
+    object-fit: cover;
+}
+
+/* --------------------------------cards */
+
+.subhero{
+    display: flex;
+    gap: 30px;
+   
+    
+    height: 50vh;
+}
+
+.cards{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    width: 30%;
+}
+
+.card{
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.eh{
+    height: 50%;
+    background-color: #f5b697;
+    margin-bottom: 30px;
+    
+   
+}
+
+.beh{
+    height: 50%;
+    background-color: #b0e2ff;
+   
+}
+
+@media (max-width:768px) {
+    nav{
+       padding:40px 100px ;
+       
+    }
+
+    .hero{
+        margin: 0 auto;
+        width: 90vw;
+        padding: 0 50px;
+
+    }
+    .hero img{
+        width: 60%;
+    }
+    .card{
+        width: 230px;
+    }
+    .main-hero{
+        padding: 0 40px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-hero h1{
+        font-size: ;
+        margin: 0;
+    }
+    .main-hero p{
+        width: 45ch;
+        margin-bottom: 30px;
+    }
+    .subhero{
+
+    }
+    .b{
+        padding-right: 0px;
+    }
+}
+
+@media (max-width:320px) {
+    nav{
+        width: 320px;
+        padding: 20px 60px;
+    }
+
+   .b{
+    padding: 0;
+   }
+
+   .hero{
+    padding: 0 20px;
+    width: 90vw;
+    margin: 0 auto;
+
+}
+.hero img{
+    width: 80vw;
+}
+.card{
+    width: 80vw;
+    gap: 30px;
+    font-size: 0.8rem;
+}
+.main-hero{
+    
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.main-hero h1{
+    margin: 0;
+    font-size: 3rem;
+}
+.main-hero p{
+   text-align: center;
+    margin-bottom: 30px;
+}
+.subhero{
+ flex-direction: column;
+}
+.b{
+    padding-right: 0px;
+}
+}
+
+
+.contain{
+    margin-top: 80px;
+    background-color: #b0e2ff;
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    height: 35vh;
+}
+
+
+.car{
+    width: 200px;
+ background-color: aquamarine;
+}
+
+.carb{
+    width: 200px;
+    background-color: bisque;
+    align-self: flex-end;
+    justify-self: flex-start;
+}
