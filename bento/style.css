@@ -11,7 +11,7 @@ html{
 
 
 nav{
-    padding:40px 200px ;
+    padding:40px 50px ;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(238, 207, 181, 0.411);
@@ -30,13 +30,15 @@ a:nth-of-type(1){
     border-bottom: 1px solid gray;
 }
 .b{
-    padding-right: 100px;
+    padding-right: 50px;
 }
 /* ---------------------------------hero */
 
 .hero{
-    padding: 0 200px;
+    padding: 0 50px;
+    
    
+  
 }
 
 .main-hero{
@@ -53,14 +55,15 @@ a:nth-of-type(1){
     margin-right: 150px;
 }
 
-.main-hero p{
+/* .main-hero p{
     width: 30ch;
-}
+} */
 
 img{
+    
     border-radius: 40px;
-    width: 1800px;
-    height: 550px;
+    width: 60%;
+    
     object-fit: cover;
 }
 
@@ -69,17 +72,20 @@ img{
 .subhero{
     display: flex;
     gap: 30px;
+   
+    
+    height: 50vh;
 }
 
 .cards{
-    
-    width: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    width: 30%;
 }
 
 .card{
-    width: 400px;
     border-radius: 30px;
-    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,12 +93,17 @@ img{
 }
 
 .eh{
+    height: 50%;
     background-color: #f5b697;
     margin-bottom: 30px;
+    
+   
 }
 
 .beh{
+    height: 50%;
     background-color: #b0e2ff;
+   
 }
 
 @media (max-width:768px) {
@@ -102,7 +113,10 @@ img{
     }
 
     .hero{
+        margin: 0 auto;
+        width: 90vw;
         padding: 0 50px;
+
     }
     .hero img{
         width: 60%;
@@ -116,6 +130,7 @@ img{
         align-items: flex-start;
     }
     .main-hero h1{
+        font-size: ;
         margin: 0;
     }
     .main-hero p{
@@ -142,29 +157,30 @@ img{
 
    .hero{
     padding: 0 20px;
-    width: 440px;
+    width: 90vw;
+    margin: 0 auto;
 
 }
 .hero img{
-    width: 320px;
-    height:50%;
+    width: 80vw;
 }
 .card{
-    width: 300px;
+    width: 80vw;
     gap: 30px;
-    height:50%;
+    font-size: 0.8rem;
 }
 .main-hero{
-    padding: 0 40px;
+    
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
 }
 .main-hero h1{
     margin: 0;
     font-size: 3rem;
 }
 .main-hero p{
-    width: 32ch;
+   text-align: center;
     margin-bottom: 30px;
 }
 .subhero{
@@ -173,4 +189,27 @@ img{
 .b{
     padding-right: 0px;
 }
+}
+
+
+.contain{
+    margin-top: 80px;
+    background-color: #b0e2ff;
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    height: 35vh;
+}
+
+
+.car{
+    width: 200px;
+ background-color: aquamarine;
+}
+
+.carb{
+    width: 200px;
+    background-color: bisque;
+    align-self: flex-end;
+    justify-self: flex-start;
 }
