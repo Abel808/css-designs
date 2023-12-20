@@ -1,0 +1,46 @@
+.card{
+   
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+     position: relative;
+}
+
+
+.bg img{
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+}
+
+
+.bg{
+   position: absolute;
+   width: 100%;
+   z-index: -1; 
+}
+
+
+.card:hover .bg{
+    transform: perspective(1000px) translateY(-5%) rotateY(-35deg) ;
+    
+}
+
+
+.fig{
+   
+    position: absolute;
+    inset: 0;
+    width: 400px;
+    object-fit: cover;
+    object-position: left;
+    opacity: 0;
+    transition: all 0.4s ease;
+    
+}
+
+.fig:hover{
+    transform: translateX(-30%);
+    opacity: 1;
+}
