@@ -82,6 +82,6 @@ body{
    
 }
 .card:hover .logo{
-    transform: translateY(-70%);
+    transform: translateY(-70%)  scale(1.2);
    
 }
