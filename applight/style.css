@@ -1,0 +1,40 @@
+html {
+  font-size: 62%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: pink; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+  padding: 3rem 5rem; }
+  nav div {
+    display: flex;
+    gap: 20px; }
+    nav div a {
+      font-family: sans-serif;
+      font-size: 12px;
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 600; }
+      nav div a:hover {
+        color: #391179; }
+
+main {
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+  justify-content: center; }
+  main .txt-section {
+    color: white;
+    width: 50%; }
+  main img {
+    margin: 0; }
