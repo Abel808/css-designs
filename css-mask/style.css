@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+p{
+    margin-bottom: 20px;
+}
+.hero{
+ display: grid;
+    grid-template-columns: 1fr min(100%, 65ch) 1fr; 
+    position: relative;
+    z-index: 30;
+   
+}
+
+.content {
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    grid-column: 2;
+     
+    z-index: -2;
+    color: rgb(219, 219, 219);
+    margin-top: 30px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.hero img{
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.hero .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 85%;
+    font-size: 3rem;
+    color: aliceblue;
+    font-weight: 800;
+    font-family: Helvetica, sans-serif;
+  
+
+}
+
+.mask img{ 
+  
+    mask-image: linear-gradient(rgb(0 0 0 / 0.8), rgb(0 0 0 / 0))
+}
+
+.mask{
+    grid-column: 1/4;
+     position: relative; 
+    position: sticky;
+   top: 0px;
+   z-index: ;
+}
+   
+
+.content img{
+    mask: linear-gradient(rgb(0 0 0 / 1), rgba(0, 0, 0, 0.219)20%,rgb(0 0 0 / 0) ),url('./asset.svg')no-repeat ;
+    mask-size: 900px;
+    mask-position:bottom;
+
+}
+
+
+.t{
+
+transform: perspective(1000px) rotateX(-20deg);
+transform-origin: center;
+}
+/* url('./asset.svg')  */

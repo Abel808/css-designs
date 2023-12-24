@@ -60,12 +60,15 @@ h1{
 .subhero{
     display: flex;
     gap: 30px;
+    
 }
 
 .subhero img{
     width: 65%;
     border-radius: 30px;
-    height: 100%;
+   object-fit: cover;
+   
+   
     
 
 }
@@ -126,6 +129,7 @@ h1{
     }
     .subhero{
         flex-direction: column;
+
     }
     .subhero img{
         height: 30%;

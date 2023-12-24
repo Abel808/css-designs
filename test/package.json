@@ -1,10 +1,11 @@
 {
-  "name": "applight",
+  "name": "test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node-sass sass/main.scss  ./style.css -w"
+    "compile": "node-sass  scss/main.scss ./style.css -w"
+    
   },
   "author": "",
   "license": "ISC",

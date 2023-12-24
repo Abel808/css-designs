@@ -1,0 +1,49 @@
+
+body{
+    display: grid;
+    grid-template-columns: 1fr min(65ch,100%) 1fr;
+}
+
+body > *{
+    grid-column: 2;
+}
+.sticky{
+    position: relative;
+
+}
+
+.head{
+    background-color: palegoldenrod;
+    color: rgb(24, 24, 24);
+    padding: 50px;
+    grid-column: 1/-1;
+    position: sticky;
+    top: 50px;
+    z-index: ;
+}
+
+
+.content{
+    grid-column: 2;
+}
+
+.content p{ 
+ 
+    margin-bottom: 30px;
+}
+
+.head1, .head2, .head3, .head4{
+    position: sticky;
+    top: 10px;
+}
+.head1{
+    background-color: aqua;
+}
+
+.head2{
+    background-color: blue;
+}
+
+.head3{
+    background-color: burlywood;
+}
