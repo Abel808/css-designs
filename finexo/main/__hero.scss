@@ -1,0 +1,70 @@
+
+.hero{
+   
+    height: 60vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    justify-content: center;
+    
+
+    .hero-content{
+        width: 30%;
+        padding-right: 2rem;
+        h1{
+
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+        p{
+            line-height: 1.5;
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+        
+        }   
+    }
+
+    .hero-img{
+       
+        // position: relative;
+       width: 30%;
+        height: 100%;
+        
+        img{
+            
+            position: absolute;
+            top: 50%;
+            
+            width:35%;
+            transform: translateY(-50%);
+            animation: upndown 8.5s infinite ease-out;
+  
+         }
+    }
+    
+
+       
+
+        
+    
+}
+    
+
+@keyframes upndown {
+
+    
+  0%{
+    top:55%;
+  }
+
+    50%{
+        top:40%;
+    }
+
+    100%{
+        top:55%;
+    }
+    
+}

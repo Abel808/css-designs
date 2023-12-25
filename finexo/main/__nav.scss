@@ -1,0 +1,42 @@
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 5rem;
+    p{
+     font-weight: 700;
+     font-size: 1.5rem;
+     color: white;
+     padding-left: 2rem;
+    }
+        ul{
+            display:flex;
+            list-style: none;
+            gap: 3rem;
+            align-items: center;
+           
+           li:first-child{
+            a{
+                 color: rgb(0, 174, 255);
+            }
+           
+           }
+            a{
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                text-decoration: none;
+                color: white;
+                display: flex;
+                justify-content: center;
+                gap:1rem;
+                align-items: center;
+    
+                &:hover, .fa-solid:hover{
+                    color: rgb(0, 174, 255);
+                }
+    
+            }
+        }
+    }
