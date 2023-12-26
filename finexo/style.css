@@ -55,6 +55,21 @@ nav {
       width: 35%;
       transform: translateY(-50%);
       animation: upndown 8.5s infinite ease-out; }
+  .hero button {
+    height: 35px;
+    width: 100px;
+    background-color: #43cec7;
+    border: 1px solid #43cec7;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    margin-top: 4rem;
+    text-transform: capitalize;
+    font-size: 1.1rem; }
+    .hero button:hover {
+      background-color: white;
+      color: #43cec7;
+      border: 1px solid white; }
 
 @keyframes upndown {
   0% {
@@ -63,6 +78,213 @@ nav {
     top: 40%; }
   100% {
     top: 55%; } }
+
+.services {
+  margin: 7rem auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%; }
+  .services .main-heading {
+    margin-bottom: 5rem;
+    text-align: center; }
+    .services .main-heading h2 {
+      font-size: 3rem;
+      text-align: center; }
+      .services .main-heading h2 span {
+        color: aqua;
+        font-size: inherit; }
+    .services .main-heading p {
+      color: #202020;
+      font-size: 1.1rem; }
+  .services .services-cards {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 3rem; }
+    .services .services-cards .service-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.062);
+      width: 250px;
+      text-align: center;
+      border-radius: 20px;
+      padding: 2rem;
+      border: 2px solid #ffffff; }
+      .services .services-cards .service-card a {
+        margin: 3rem 0;
+        text-decoration: none;
+        color: #11095B;
+        font-weight: 600;
+        border-bottom: 1px solid #11095B;
+        padding-bottom: 2px; }
+        .services .services-cards .service-card a:hover {
+          color: #3e33a0; }
+      .services .services-cards .service-card p {
+        margin-top: 1rem;
+        color: #272727;
+        font-weight: 300;
+        line-height: 1.8;
+        text-align: left;
+        width: 85%; }
+      .services .services-cards .service-card img {
+        max-width: 70px; }
+      .services .services-cards .service-card h4 {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #202020; }
+      .services .services-cards .service-card:hover {
+        border: 2px solid #9087da;
+        box-shadow: 0 3px 15px rgba(95, 88, 196, 0.404); }
+  .services button {
+    padding: 1rem;
+    width: 120px;
+    background-color: #43cec7;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    margin-top: 4rem;
+    text-transform: capitalize;
+    font-size: 1.1rem; }
+    .services button:hover {
+      background-color: white;
+      color: #43cec7;
+      border: 1px solid #43cec7; }
+
+.about {
+  margin: 2rem auto;
+  width: 100%;
+  background-color: #1b0752;
+  color: white;
+  padding: 4rem; }
+  .about .about-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem; }
+    .about .about-head h4 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-transform: capitalize; }
+      .about .about-head h4 span {
+        font-size: inherit;
+        color: #43cec7; }
+    .about .about-head p {
+      font-size: 1.1rem;
+      width: 60%; }
+  .about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 70%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto; }
+    .about .about-container .fig {
+      position: relative;
+      height: 350px;
+      width: 400px; }
+      .about .about-container .fig img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 400px;
+        animation: upndown 8.5s infinite ease-out;
+        transform: translateY(-50%); }
+    .about .about-container .about-content {
+      width: 60%;
+      padding: 1rem; }
+      .about .about-container .about-content h4, .about .about-container .about-content p {
+        margin-bottom: 2rem; }
+      .about .about-container .about-content h4 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 800; }
+      .about .about-container .about-content p {
+        line-height: 1.8;
+        text-align: justify; }
+      .about .about-container .about-content button {
+        padding: 1rem;
+        width: 120px;
+        background-color: #43cec7;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        font-weight: 600;
+        margin-top: 2rem;
+        text-transform: capitalize;
+        font-size: 1.1rem; }
+        .about .about-container .about-content button:hover {
+          background-color: white;
+          color: #43cec7; }
+
+@keyframes upndown {
+  0% {
+    top: 55%; }
+  50% {
+    top: 40%; }
+  100% {
+    top: 55%; } }
+
+.features {
+  margin: 4rem auto;
+  text-align: center; }
+  .features h4 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-transform: capitalize; }
+    .features h4 span {
+      font-size: inherit;
+      color: aqua; }
+  .features .feature-cards {
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+    margin: 2rem auto; }
+    .features .feature-cards .feature-card {
+      padding: 3rem;
+      text-align: left;
+      border-radius: 20px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.062);
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #b2a9fa56;
+      box-shadow: 0 3px 15px rgba(95, 88, 196, 0.116); }
+      .features .feature-cards .feature-card img {
+        width: 50px;
+        margin-bottom: 2rem;
+        align-self: center; }
+      .features .feature-cards .feature-card h5 {
+        align-self: center;
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        text-transform: capitalize; }
+      .features .feature-cards .feature-card p {
+        line-height: 1.5;
+        font-weight: 300;
+        text-align: justify;
+        color: #252525; }
+  .features button {
+    padding: 1rem;
+    width: 120px;
+    background-color: #43cec7;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    margin-top: 4rem;
+    text-transform: capitalize;
+    font-size: 1.1rem; }
+    .features button:hover {
+      background-color: white;
+      color: #43cec7;
+      border: 1px solid #43cec7; }
 
 * {
   margin: 0;

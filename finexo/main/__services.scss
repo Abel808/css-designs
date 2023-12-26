@@ -1,0 +1,113 @@
+
+
+.services{
+  margin: 7rem auto;
+height:60vh ;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 60%;
+
+
+.main-heading{
+    margin-bottom: 5rem;
+    text-align: center;
+    h2{
+        font-size: 3rem;
+        text-align: center;
+        span{
+            color: aqua;
+            font-size: inherit;
+        }
+    }
+    p{
+        color: rgb(32, 32, 32);
+        font-size: 1.1rem;
+    }
+    }
+
+ .services-cards{
+    display: flex; 
+    gap: 5rem;
+    margin-bottom: 3rem;
+   
+    .service-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.062);
+        width: 250px;
+        text-align: center;
+        border-radius: 20px;
+        padding: 2rem;
+        border: 2px solid #ffffff;
+        a{
+            margin: 3rem 0;
+            text-decoration: none;
+            color: #11095B;
+            font-weight: 600;
+            border-bottom: 1px solid #11095B;
+            padding-bottom: 2px;
+            
+            &:hover{
+                color: #3e33a0;
+                
+            }
+            
+        }
+        p{
+            margin-top: 1rem;
+            color: #272727;
+            font-weight: 300;
+            line-height: 1.8;
+            text-align: left;
+            width: 85%;
+           
+        }
+        img{
+            max-width: 70px;
+        }
+        h4{
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #202020;
+        }
+
+        &:hover{
+            border: 2px solid #9087da;
+            
+            box-shadow: 0 3px 15px rgba(95, 88, 196, 0.404);
+
+           
+        }
+    }
+
+    
+ }
+   
+ button{
+
+    padding: 1rem ;
+    width: 120px;
+    
+    background-color: #43cec7 ;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    margin-top: 4rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+
+
+    &:hover{
+        background-color: white;
+        color: #43cec7;
+        border: 1px solid #43cec7;
+    }
+}
+
+}

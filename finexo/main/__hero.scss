@@ -43,14 +43,31 @@
   
          }
     }
-    
+      
 
-       
+    button{
+        height: 35px;
+        width: 100px;
+        background-color: #43cec7 ;
+        border: 1px solid #43cec7;
+        border-radius: 20px;
+        color: white;
+        font-weight: 600;
+        margin-top: 4rem;
+        text-transform: capitalize;
+        font-size: 1.1rem;
 
-        
-    
+        &:hover{
+            background-color: white;
+            color: #43cec7;
+            border: 1px solid white;
+        }
+    }
 }
     
+
+
+
 
 @keyframes upndown {
 
