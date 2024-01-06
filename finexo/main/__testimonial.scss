@@ -1,0 +1,21 @@
+.testimonal-cards{
+    display: flex;
+   
+    gap: 2rem;
+    justify-content: space-around;
+
+    .testimonial-card{
+        width: 350px;
+        display: flex;
+        flex-direction:column;
+        gap: 1rem;
+        padding: 2rem;
+        background-color: palegreen;
+
+        img{
+            border-radius: 50%;
+            width: 100px;
+            align-self: center;
+        }
+    }
+}
