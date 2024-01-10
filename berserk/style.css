@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+body > *{
+    min-height: 100vh;
+    grid-column: 2;
+    position: relative;
+}
+
+
+img{
+    height: 450px;
+    transition: 0.3s all;
+    filter: saturate(0);
+}
+
+.wrapper{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot{
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    
+}
+
+.images{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.3s all;
+}
+
+h1{
+   z-index: 1;
+   position: absolute;
+    
+    font-size: 7rem; 
+    color: rgb(223, 28, 28);
+    font-weight: 600;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 14px #00000056;
+    pointer-events: none;
+    animation: movein 3s ease-in-out;
+    backface-visibility: hidden;
+    text-align: center;
+    
+    
+    
+
+}
+
+h5{
+    font-weight: 500;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    animation: movein 1.3s ease-out;
+}
+
+.images:has(:hover) img:not( :hover){
+    filter: blur(3px);
+    transform: scale(0.8);
+    filter: saturate(0);
+    
+    
+}
+
+img:hover{
+    transform: scale(1.2);
+    filter: saturate(1);
+}
+
+@keyframes movein {
+
+  
+     0%{
+        opacity:0;
+        transform: translateX(-400px);
+    }
+
+
+    80%{
+        transform: translateX(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+.images img:nth-of-type(1){
+    height: 400px;
+    width: 200px;
+    object-fit: cover;
+}
+.images img:nth-of-type(2){
+    height: 520px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.images img:nth-of-type(3){
+    height: 380px;
+    width: 260px;
+    object-fit: cover;
+}
+.images img:nth-of-type(4){
+    height: 500px;
+    width: 220px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.images img:last-child{
+    height: 400px;
+    width: 200px;
+    object-fit: cover;
+    object-position: left;
+}
