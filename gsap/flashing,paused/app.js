@@ -16,7 +16,7 @@ let boxAnime = gsap.to(box,{
 let textAnime = gsap.to(txt,{
    
     x:"0%",
-    fontSize:"4rem",
+    fontSize:"3rem",
     paused:true,
 })
 
