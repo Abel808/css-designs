@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
 
 </head>
 
@@ -88,6 +88,35 @@
     </main>
 
 
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+ let tl = gsap.timeline()
+ let logo =document.querySelector('main')
+
+ //animation
+ tl 
+    .to([logo,'aside'],{
+        x:0,
+        stagger:.2
+    })
+
+    tl.paused(true)
+
+
+// adding btn click
+
+ let svg = document.querySelector('.logo')
+ let collapsed = true
+
+ svg.addEventListener('click',()=>{
+    if(collapsed){
+        tl.play()
+        collapsed=false
+    }else {
+    tl.reverse()
+     collapsed =true }
+ })
 
 
 
@@ -98,6 +127,13 @@
 
 
 
+
+
+
+
+
+
+</script>
 
 
 
