@@ -48,9 +48,10 @@
    li{
     font-family: 'inter';
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 400;
     padding-bottom: 10px;
     color: white;
+    transform: translateX(-100%);
    }
 
 
@@ -67,6 +68,7 @@
 
 <body>
     <aside>
+        <p style="color: aliceblue; font-family: 'inter';font-weight: 800;">Menu</p>
         <ul>
             <li>Dashboard</li>
             <li>Earnings</li>
@@ -100,6 +102,11 @@
         x:0,
         stagger:.2
     })
+    .to('li',{
+        x:0,
+        ease:"power out",
+        stagger:.2
+    },'-=0.7')
 
     tl.paused(true)
 
