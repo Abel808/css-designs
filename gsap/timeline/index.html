@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./app.js"></script>
 </head>
+
+<style>
+  
+    .fade1, .fade2, .fade3 {
+    transform: scaleY(0);
+    transform-origin: top;
+    }
+
+    .fade1 {
+    background-color: #C9D6EA;
+    }
+
+    .fade2 {
+    background-color: #5E9EFF;
+    }
+
+    .fade3 {
+    background-color: #2C80FF;
+    }
+
+
+    .fade-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+    }
+
+
+  .mask {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+
+    h1 {
+  margin: 0;
+  font-size: 8rem;
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.08em;
+  z-index: 1;
+  transform: scaleX(0);
+  color: white;
+}/*# sourceMappingURL=main.css.map */
+</style>
+
+
 <body>
+    <div class="fade-container">
+        <div class="fade1" id="a"></div>
+        <div class="fade2" id="b"></div>
+        <div class="fade3" id="c"></div>
+        <div class="mask">
+            <h1>Oceanea</h1>
+        </div>
+    </div>
     
 </body>
 </html>
